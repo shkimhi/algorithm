@@ -1,9 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        plus();
-    }
+public class No11382 {
     public static int plus(){
         Scanner sc = new Scanner(System.in);
         long a = sc.nextLong();
@@ -15,4 +12,5 @@ public class Main {
 
         return 0;
     }
+
 }
