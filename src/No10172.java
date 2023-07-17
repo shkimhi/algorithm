@@ -1,9 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        dog();
-    }
+public class No10172 {
     public static int dog(){
 
         System.out.println("|\\_/|");
@@ -14,4 +9,5 @@ public class Main {
 
         return 0;
     }
+
 }
