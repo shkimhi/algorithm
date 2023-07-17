@@ -1,9 +1,4 @@
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        cat();
-    }
+public class No10171 {
     public static int cat(){
 
         System.out.println("\\    /\\");
@@ -11,9 +6,7 @@ public class Main {
         System.out.println("(  /  )");
         System.out.println(" \\(__)|");
 
-
-
-
         return 0;
     }
+
 }
