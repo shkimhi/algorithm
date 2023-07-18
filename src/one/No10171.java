@@ -1,3 +1,5 @@
+package one;
+
 public class No10171 {
     public static int cat(){
 

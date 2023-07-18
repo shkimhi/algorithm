@@ -1,3 +1,5 @@
+package one;
+
 public class No10172 {
     public static int dog(){
 
