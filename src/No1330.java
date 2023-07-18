@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        iftest();
-    }
+public class No1330 {
+
     public static int iftest() {
         Scanner sc = new Scanner(System.in);
 
@@ -19,4 +17,5 @@ public class Main {
 
         return 0;
     }
+
 }
