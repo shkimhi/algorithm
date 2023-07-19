@@ -1,9 +1,8 @@
+package two;
+
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        dice();
-    }
+public class No2480 {
     public static int dice() {
         Scanner sc = new Scanner(System.in);
 
@@ -30,8 +29,6 @@ public class Main {
                 System.out.println(sum2 * 100);
             }
         }
-
-
 
         return 0;
     }
