@@ -1,11 +1,9 @@
+package three;
+
 import java.io.*;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        speed();
-    }
+public class No15552 {
     public static int speed() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -24,4 +22,5 @@ public class Main {
 
         return 0;
     }
+
 }
