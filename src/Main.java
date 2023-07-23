@@ -11,25 +11,29 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
 
-        st = new StringTokenizer(br.readLine());
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        int c = 0;
-        int[] arr = new int[a];
-        for(int i=1; i<=arr.length; i++){
-            arr[i-1] = i;
+        int[] arr = new int[28];
+        int[] arr2 = new int[30];
+
+        for (int i =1; i <= 30; i++){
+            arr2[i-1] = i;
         }
 
-        for(int n =0; n<b; n++){
+        for(int i =0; i < arr.length; i++){
             st = new StringTokenizer(br.readLine());
-            int i = Integer.parseInt(st.nextToken());
-            int j = Integer.parseInt(st.nextToken());
-            c = arr[i-1];
-            arr[i-1] = arr[j-1];
-            arr[j-1] = c;
+            arr[i] = Integer.parseInt(st.nextToken());
         }
-        for(int i =0 ; i<arr.length; i++) {
-            bw.write(String.valueOf(arr[i]+" "));
+
+        for(int j=0; j<arr.length; j++) {
+            for (int i = 0; i < arr2.length; i++) {
+                if (arr[j] == arr2[i]) {
+                    arr2[i] = 0;
+                }
+            }
+        }
+        for(int i=0; i<arr2.length; i++){
+            if(arr2[i] != 0) {
+                bw.write(String.valueOf(arr2[i])+"\n");
+            }
         }
         bw.close();
     }
