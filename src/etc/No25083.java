@@ -1,10 +1,8 @@
-import java.io.*;
-import java.util.*;
+package etc;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
+import java.io.IOException;
+
+public class No25083 {
     public static void String() throws IOException {
 
         System.out.println("         ,r\'\"7");
@@ -14,4 +12,5 @@ public class Main {
         System.out.println("      |");
         System.out.println("      |");
     }
+
 }
