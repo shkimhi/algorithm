@@ -1,10 +1,8 @@
-import java.io.*;
-import java.util.*;
+package five;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
+import java.io.*;
+
+public class No10809 {
     public static void String() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -32,4 +30,5 @@ public class Main {
         bw.close();
 
     }
+
 }
