@@ -13,11 +13,9 @@ public class Main {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         String str = br.readLine();
-        int a = Integer.parseInt(br.readLine());
 
-        String s = str.substring(a-1,a);
 
-        bw.write(s);
+        bw.write(String.valueOf(str.length()));
 
         bw.close();
 
