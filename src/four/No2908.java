@@ -1,10 +1,9 @@
-import java.io.*;
-import java.util.*;
+package four;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
+import java.io.*;
+import java.util.StringTokenizer;
+
+public class No2908 {
     public static void String() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -26,4 +25,5 @@ public class Main {
         }
         bw.close();
     }
+
 }
