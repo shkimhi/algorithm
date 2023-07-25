@@ -1,15 +1,11 @@
+package six;
+
 import java.io.*;
-import java.util.*;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
-
+public class No1157 {
     public static void String() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         String word = br.readLine().toUpperCase();
 
         int[] alphabetCount = new int[26];
@@ -35,5 +31,5 @@ public class Main {
         bw.write(String.valueOf(maxChar));
         bw.close();
     }
-}
 
+}
