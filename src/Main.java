@@ -6,12 +6,21 @@ public class Main {
         String();
     }
     public static void String() throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        System.out.println("         ,r\'\"7");
-        System.out.println("r`-_   ,'  ,/");
-        System.out.println(" \\. \". L_r\'");
-        System.out.println("   `~\\/");
-        System.out.println("      |");
-        System.out.println("      |");
+        String input = br.readLine();
+        if(input == null || input.isBlank()){
+            bw.write("0");
+        }else {
+            String[] arr = input.split( " ");
+            if(arr[0].isEmpty()) {
+                bw.write(String.valueOf(arr.length - 1));
+            }else {
+                bw.write(String.valueOf(arr.length));
+            }
+        }
+
+        bw.close();
     }
 }
