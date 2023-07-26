@@ -1,12 +1,8 @@
+package six;
+
 import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
-
+public class No2941 {
     public static void String() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,9 +13,9 @@ public class Main {
             char ch1 = str.charAt(i);
             if(i == str.length()-1) {
                 cnt++;
-            break;
+                break;
             }
-                char ch2 = str.charAt(i + 1);
+            char ch2 = str.charAt(i + 1);
             if (ch1 == 'c' && ch2 == '=') {
                 cnt++;
                 i++;
@@ -27,8 +23,8 @@ public class Main {
                 cnt++;
                 i++;
             } else if (ch1 == 'd' && ch2 == 'z' && i + 2 < str.length() && str.charAt(i+2) == '=') {
-                    cnt++;
-                    i += 2;
+                cnt++;
+                i += 2;
             } else if (ch1 == 'd' && ch2 == '-') {
                 cnt++;
                 i++;
@@ -54,5 +50,5 @@ public class Main {
 
         bw.close();
     }
-}
 
+}
