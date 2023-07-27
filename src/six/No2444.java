@@ -1,12 +1,9 @@
-import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
+package six;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
+import java.io.IOException;
+import java.util.Scanner;
 
+public class No2444 {
     public static void String() throws IOException {
         Scanner sc= new Scanner(System.in);
 
@@ -33,5 +30,5 @@ public class Main {
             System.out.println("");
         }
     }
-}
 
+}

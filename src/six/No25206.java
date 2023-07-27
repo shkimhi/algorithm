@@ -45,6 +45,7 @@ public class No25206 {
         bw.write(String.valueOf(answer/sum));
 
         bw.close();
+
     }
 
 }
