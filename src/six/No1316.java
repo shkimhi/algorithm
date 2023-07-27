@@ -1,12 +1,10 @@
+package six;
+
 import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.HashSet;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        String();
-    }
-
+public class No1316 {
     public static void String() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -35,5 +33,5 @@ public class Main {
         bw.write(String.valueOf(anwser));
         bw.close();
     }
-}
 
+}
