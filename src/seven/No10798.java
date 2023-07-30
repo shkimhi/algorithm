@@ -1,12 +1,9 @@
+package seven;
+
 import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
+public class No10798 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -17,7 +14,7 @@ public class Main {
         String[][] str = new String[Row][Col];
         String input = null;
         for (int i = 0; i < Row ; i++) {
-             input = br.readLine();
+            input = br.readLine();
             for (int j = 0; j < input.length(); j++) {
                 str[i][j] = String.valueOf(input.charAt(j));
             }
@@ -34,5 +31,5 @@ public class Main {
 
         bw.close();
     }
-}
 
+}
