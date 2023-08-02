@@ -1,12 +1,10 @@
+package eight;
+
 import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Locale;
+import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
+public class No11005 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -22,4 +20,3 @@ public class Main {
     }
 
 }
-
