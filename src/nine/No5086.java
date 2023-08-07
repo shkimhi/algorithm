@@ -14,7 +14,9 @@ public class No5086 {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             boolean c = false;
-            if(a == 0 && b == 0)    break;
+            if(a == 0 && b == 0){
+                break;
+            }
             for(int i = 1; i<=b; i++) {
                 if(b%i == 0 && i==a){
                     bw.write("factor"+"\n");
@@ -22,8 +24,12 @@ public class No5086 {
                     break;
                 }
             }
-            if(a%b == 0 && c == false)  bw.write("multiple"+"\n");
-            if(a%b != 0 && c == false)  bw.write("neither"+"\n");
+            if(a%b == 0 && c == false){
+                bw.write("multiple"+"\n");
+            }
+            if(a%b != 0 && c == false){
+                bw.write("neither"+"\n");
+            }
         }
         bw.close();
     }
