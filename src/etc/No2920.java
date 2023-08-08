@@ -1,12 +1,10 @@
+package etc;
+
 import java.io.*;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
+public class No2920 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -18,7 +16,7 @@ public class Main {
         int cnt2 = 0;
         for(int i =0; i<8; i++){
             arr.add(i, Integer.parseInt(st.nextToken()));
-            }
+        }
         for(int i =0, j=1, k=8 ; i<8; i++,j++,k--) {
             if (j == arr.get(i)) {
                 cnt++;
@@ -36,5 +34,6 @@ public class Main {
 
         bw.close();
 
-        }
     }
+
+}
