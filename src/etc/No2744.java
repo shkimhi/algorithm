@@ -1,13 +1,10 @@
-import java.io.*;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
+package etc;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+public class No2744 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
@@ -25,4 +22,5 @@ public class Main {
         System.out.print(sb);
 
     }
+
 }
