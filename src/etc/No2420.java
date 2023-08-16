@@ -1,13 +1,9 @@
+package etc;
+
 import java.io.*;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
+public class No2420 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -15,7 +11,8 @@ public class Main {
 
         long a = Long.parseLong(st.nextToken());
         long b = Long.parseLong(st.nextToken());
-        bw.write(String.valueOf(Math.abs(a-b)));
-    bw.close();
+        bw.write(String.valueOf(Math.abs(a - b)));
+        bw.close();
     }
-}
+
+    }
