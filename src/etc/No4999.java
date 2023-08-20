@@ -1,13 +1,9 @@
-import java.io.*;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
+package etc;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
+import java.io.IOException;
+import java.util.Scanner;
 
+public class No4999 {
     public static void processInput() throws IOException {
         Scanner sc = new Scanner(System.in);
 
@@ -20,4 +16,5 @@ public class Main {
             System.out.println("no");
         }
     }
+
 }
