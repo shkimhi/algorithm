@@ -1,14 +1,9 @@
-import java.io.*;
-import java.math.BigInteger;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
+package etc;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
+import java.io.IOException;
+import java.util.Scanner;
 
+public class No3733 {
     public static void processInput() throws IOException {
         Scanner sc = new Scanner(System.in);
         int n, s;
@@ -18,4 +13,5 @@ public class Main {
             System.out.println(s / (n + 1));
         }
     }
+
 }
