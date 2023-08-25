@@ -1,14 +1,10 @@
+package etc;
+
 import java.io.*;
-import java.math.BigInteger;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
+public class No2752 {
     public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -21,9 +17,10 @@ public class Main {
 
         Arrays.sort(arr);
         for(int i : arr)
-        bw.write(String.valueOf(i)+" ");
+            bw.write(String.valueOf(i)+" ");
 
         bw.close();
 
     }
+
 }
