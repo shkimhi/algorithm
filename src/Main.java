@@ -1,35 +1,30 @@
 import java.io.*;
-import java.math.BigInteger;
-import java.time.LocalDate;
 import java.util.*;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        processInput();
-    }
-
-    public static void processInput() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        String arr [] = new String[5];
+        int H = 0;
+        int M = 0;
+        int answer =0;
+        for(int i=0; i<5; i++){
+            arr[i] = br.readLine();
+        }
 
-        int a = Integer.parseInt(br.readLine());
-        int b = Integer.parseInt(br.readLine());
-        int c = Integer.parseInt(br.readLine());
+        for(int i =0; i<5; i++){
+            String start_h = arr[i].substring(0,2);
+            String start_m = arr[i].substring(3,5);
 
-        int sum = 0;
-        sum = a<b ? a : b;
-        sum = sum<c ? sum : c;
-
-        int d = Integer.parseInt(br.readLine());
-        int e = Integer.parseInt(br.readLine());
-
-        sum += d<e ? d:e;
-        bw.write(String.valueOf(sum-50));
-
-
+            String end_h = arr[i].substring(6,8);
+            String end_m = arr[i].substring(9,11);
+            H += Integer.parseInt(end_h) - Integer.parseInt(start_h);
+            M += Integer.parseInt(start_m) - Integer.parseInt(end_m);
+        }
+        answer = (H*60) + M;
+        bw.write(String.valueOf(answer));
         bw.close();
-
-
+        br.close();
     }
 }
