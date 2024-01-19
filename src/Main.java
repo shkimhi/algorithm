@@ -23,6 +23,7 @@ public class Main {
             M += Integer.parseInt(start_m) - Integer.parseInt(end_m);
         }
         answer = (H*60) + M;
+
         bw.write(String.valueOf(answer));
         bw.close();
         br.close();
