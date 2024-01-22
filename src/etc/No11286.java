@@ -1,8 +1,10 @@
-import java.io.*;
-import java.util.*;
+package etc;
 
-public class Main {
-    public static void main(String[] args) throws IOException {
+import java.io.*;
+import java.util.PriorityQueue;
+
+public class No11286 {
+    public void process() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int N = Integer.parseInt(br.readLine());
