@@ -6,29 +6,18 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int N = Integer.parseInt(br.readLine());
+        int[] arr = new int[N];
+        for(int i =0; i<N; i++){
+            arr[i] = Integer.parseInt(br.readLine());
+        }
 
-        PriorityQueue<Integer> myqueue = new PriorityQueue<>((o1,o2) -> {
-            int a = Math.abs(o1);
-            int b = Math.abs(o2);
-            if(a == b){
-                return o1 > o2 ? 1 : -1;
-            }
-            return a - b;
-        });
+        Arrays.sort(arr);
 
-        for(int i = 0; i < N; i++){
-            int C = Integer.parseInt(br.readLine());
-            if(C == 0){
-                if(myqueue.isEmpty()){
-                    bw.write("0\n");
-                }else {
-                    bw.write(myqueue.poll() +"\n");
-                }
-            }else {
-                myqueue.add(C);
-            }
+        for(int a : arr){
+            bw.write(String.valueOf(a)+"\n");
         }
         bw.close();
         br.close();
+
     }
 }
