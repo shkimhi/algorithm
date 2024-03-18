@@ -3,24 +3,39 @@ package etc;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class No1978_v2 {
     public void process() throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int num = Integer.parseInt(br.readLine());
-        boolean pN[] = new boolean[1001];
-        pN[1] = true;
-        for(int i=2; i*i<=1000; i++)
-            if(!pN[i])
-                for(int j=i*i; j<=1000; j+=i)
-                    pN[j] = true;
-        int cnt=0;
-        String list[] = br.readLine().split(" ");
-        for(int i=0; i<list.length; i++){
-            if(!pN[Integer.parseInt(list[i])])
-                cnt++;
+        Scanner scanner = new Scanner(System.in);
+        int count = scanner.nextInt();
+
+        // 소수의 개수를 담을 변수
+        int res = 0;
+        for (int i = 0; i < count; i++) {
+            int a = scanner.nextInt();
+
+            // a가 1이면 소수가 아니기때문에 아무것도 담지 않음
+            if (a == 1) {
+                res += 0;
+                continue;
+            }
+
+            // 약수인지 확인
+            int x = 0;
+            for (int j = 2; j < a; j++) {
+                if (a % j == 0) {
+                    x++;
+                }
+            }
+
+            // x가 0이면 소수이기 때문에 res ++함
+            if (x == 0) {
+                res++;
+            }
+
         }
-        System.out.println(cnt);
+        System.out.println(res);
     }
 }
