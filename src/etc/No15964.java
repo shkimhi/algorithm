@@ -11,9 +11,9 @@ public class No15964 {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        System.out.println(add(Integer.parseInt(st.nextToken()),Integer.parseInt(st.nextToken())));
+        System.out.println(add(Long.parseLong(st.nextToken()),Long.parseLong(st.nextToken())));
     }
-    private static int add(int a, int b){
+    private static long add(long a, long b){
         return (a+b)*(a-b);
     }
 }
