@@ -1,7 +1,9 @@
-import java.io.*;
-import java.util.*;
+package etc;
 
-public class Main {
+import java.io.IOException;
+import java.util.Scanner;
+
+public class TrafficCongestion {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
 
@@ -26,4 +28,5 @@ public class Main {
 
         scanner.close();
     }
+
 }
