@@ -14,14 +14,23 @@ public class No4153 {
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
             int c = Integer.parseInt(st.nextToken());
-
+            int max,pow;
             if (a == 0 && b == 0 && c == 0) {
                 break;
             }
 
-            int pow = (int) (Math.pow(a, 2) + Math.pow(b, 2));
+            if(a > b){
+                max = a ;
+                pow = (int) (Math.pow(b, 2) + Math.pow(c, 2));
+            } else if (c > b) {
+                max = c;
+                pow = (int) (Math.pow(a, 2) + Math.pow(b, 2));
+            }else {
+                max = b;
+                pow = (int) (Math.pow(a, 2) + Math.pow(c, 2));
+            }
 
-            if (pow == Math.pow(c, 2)) {
+            if (pow == Math.pow(max, 2)) {
                 bw.write("right\n");
             } else {
                 bw.write("wrong\n");
