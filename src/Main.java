@@ -3,33 +3,37 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int N, m, M, T, R = 0;
+        N = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        T = Integer.parseInt(st.nextToken());
+        R = Integer.parseInt(st.nextToken());
 
-    int a = Integer.parseInt(br.readLine());
-    HashMap<Character, Integer> map = new HashMap<>();
-    String name;
-
-    for(int i =0; i<a; i++){
-        name = br.readLine();
-        if(map.containsKey(name.charAt(0))){
-            map.put(name.charAt(0),map.get(name.charAt(0))+1);
-        }else {
-            map.put(name.charAt(0),1);
+        int cnt = 0;
+        int time = 0;
+        int X = m;
+        if (m + T > M) {
+            System.out.println(-1);
+            return;
         }
-    }
 
-    int cnt =0;
-    for(Character key : map.keySet()){
-        if(map.get(key) >= 5){
-            System.out.print(key);
-            cnt++;
+        while (cnt < N) {
+
+            if (X < M && (X + T) <= M) {
+                X += T;
+                cnt++;
+            } else {
+                X -= R;
+                if (X < m) {
+                    X = m;
+                }
+            }
+            time++;
+
         }
+        System.out.println(time);
     }
-
-    if(cnt == 0){
-        System.out.println("PREDAJA");
-    }
-
-    }
-
 }
