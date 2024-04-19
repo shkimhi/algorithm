@@ -1,30 +1,22 @@
 import java.io.*;
+import java.math.BigInteger;
+import java.time.LocalDate;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     int m = 4620;
 
-        String input = br.readLine();
-        String[] numbers = input.split(" ");
-        String A = numbers[0];
-        String B = numbers[1];
+     int a = m / 1000;
+     int b = m%1000 / 500;
+     int c = m%500 / 100;
+     int d = m%100 / 10;
 
-        if (A.equals("0") || B.equals("0")) {
-            System.out.println("0");
-            return;
-        }
 
-        long sum = 0;
-
-        for (int i = 0; i < A.length(); i++) {
-            int digitA = A.charAt(i) - '0';
-            for (int j = 0; j < B.length(); j++) {
-                int digitB = B.charAt(j) - '0';
-                sum += digitA * digitB;
-            }
-        }
-
-        System.out.println(sum);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
     }
 }
