@@ -6,17 +6,18 @@ import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-     int m = 4620;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());;
+        int n[] = new int[5];
+        int i;
 
-     int a = m / 1000;
-     int b = m%1000 / 500;
-     int c = m%500 / 100;
-     int d = m%100 / 10;
+        for(i = 0;i<5; i++){
+            n[i] = Integer.parseInt(st.nextToken());
+        }
 
+        for(i=0; i<5; i++){
+            System.out.println(n[(i+1)%5]);
+        }
 
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
     }
 }
