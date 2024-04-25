@@ -7,15 +7,15 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        System.out.println(f(4));
-
-    }
-
-    static int f(int n){
-        if(n==1){
-            return 1;
-        }else {
-            return f(n-1) + (n-3);
+        int a[] = new int[8];
+        int i = 0, n = 11;
+        while (n > 0) {
+            a[i++] = n % 2;
+            n /= 2;
         }
+        for (i = 7; i >= 0; i--)
+            System.out.printf("%d", a[i]);
     }
-}
+
+    }
+
