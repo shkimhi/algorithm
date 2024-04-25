@@ -7,10 +7,15 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-    int c = 0;
-    for(int i = 1; i<=2023; i++){
-        if(i%4 == 0) c++;
+        System.out.println(f(4));
+
     }
-        System.out.println(c);
+
+    static int f(int n){
+        if(n==1){
+            return 1;
+        }else {
+            return f(n-1) + (n-3);
+        }
     }
 }
