@@ -1,21 +1,30 @@
 import java.io.*;
-import java.math.BigInteger;
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) throws IOException {
+        int i , sum = 0;
 
-        int a[] = new int[8];
-        int i = 0, n = 11;
-        while (n > 0) {
-            a[i++] = n % 2;
-            n /= 2;
+        for(i=2; i<=100; i++){
+            if(test(i)){
+                sum+=i;
+            }
         }
-        for (i = 7; i >= 0; i--)
-            System.out.printf("%d", a[i]);
+
+        System.out.println(sum);
+
     }
 
+    static boolean test(int n){
+        int i , sum = 0;
+        for(i = 1; i <= n/2; i++){
+            if(n%i == 0){
+                sum += i;
+            }
+        }
+        if(n == sum){
+            return true;
+        }
+        return false;
+    }
     }
 
