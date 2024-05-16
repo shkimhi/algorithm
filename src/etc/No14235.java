@@ -13,8 +13,10 @@ public class No14235 {
             int a=sc.nextInt();
 
             if(a==0) {
-                if(pq.isEmpty())
+                if(pq.isEmpty()) {
                     System.out.println(-1);
+                    System.out.println(-1);
+                }
                 else
                     System.out.println(pq.poll());
             }
